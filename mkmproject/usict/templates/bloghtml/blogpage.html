@@ -1,0 +1,10 @@
+{%extends 'bloghtml/blog.html'%}
+{% block body_block%}
+<div class="jumbotron">
+{% if user.is_authenticated %}
+    <h1>Write your blog hare </h1>
+
+{% else %}
+    <h1>login first</h1>>
+</div>
+{% endblock %}

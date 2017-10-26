@@ -1,0 +1,37 @@
+
+{%extends 'bloghtml/registration.html'%}
+<!--style-->
+<!--/style-->
+{% block body_block%}
+<div class="container-fluid">
+
+    <!--div class="jumbotron"-->
+        <div class="col-sm-2">
+        </div>
+    <div class="col-sm-8">
+    <form method="POST">
+
+    {%if user.is_authenticated %}
+        <!--strong><i>Write Your Blog Hare</i></strong><br-->
+    {% csrf_token %}
+        <label for="Name">Name:</label><br>
+        {{form.name}}
+        <label for="title">Title:</label><br>
+        {{form.title}}
+        <label for="Text">Text:</label><br>
+        {{form.text}}
+
+
+        <input type="submit" name="submit" value="submit">
+    {% else %}
+<h2 align="center">Please Login First</h2>
+{% endif %}
+    </form>
+        <div class="col-sm-2">
+        </div>
+    </div>
+    </div>
+        <!--/div-->
+
+
+{% endblock %}

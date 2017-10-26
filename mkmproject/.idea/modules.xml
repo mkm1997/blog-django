@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../cbv/.idea/cbv.iml" filepath="$PROJECT_DIR$/../cbv/.idea/cbv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mkmproject.iml" filepath="$PROJECT_DIR$/.idea/mkmproject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../usict/.idea/usict.iml" filepath="$PROJECT_DIR$/../usict/.idea/usict.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,72 @@
+img{
+				border-radius: 100%;
+				background-color:Crimson;
+				color:rgba(10,100,233,0.5);
+				background-image:C:\Users\Toshiba\Desktop\14925637_1040112922800834_8005271160355356702_n.jpg;
+			
+			} 
+			h1{
+				font-size:48px;
+				color:White;
+				color:rgba(0,0,200,0.9);
+				background-color:rgb(254,100,50);
+				font-family:Georgia,sans-serif;
+			}
+			h3{
+				word-spacing:1em;
+				font-size:32px;
+				font-weight:bolder;
+				font-style:italic;
+				text-align:right;
+				
+				}
+				h2
+				{
+					color:georgian;
+					color:rgba(105,154,233,0.9);
+					font-weight:bold;
+					font-style:italic;
+				}
+				.name{
+				font-size:32px;
+				font-family:georgian,sans-serif;
+				overflow:scroll;
+				color:white;
+				
+				}
+				.continer
+				{
+					padding:10px;
+					color:black;
+					background-color:black;
+				}
+				.navbar
+				{
+					size:64px;
+					background-color:rgb(23,50,254);
+					/*color:white;*/
+					
+				}
+				.heading
+				{
+					font-weight:bold;
+				}
+				div.continer{
+				background-color:rgb(124,248,230);
+				font-size:32px;
+				}
+				
+			*{	  background: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-5/shards.png");
+ 
+				background-image:"C:\Users\Toshiba\Desktop\14925637_1040112922800834_8005271160355356702_n.jpg";
+				background:url(https://www.google.co.in/search?q=some+background+image+on+independence+day&tbm=isch&imgil=RLg3q1VbwF3nFM%253A%253ByJ-ijRVIRdQ7jM%253Bhttps%25253A%25252F%25252Fwallpaper.pictranslator.com%25252Findependence-day-background-images%25252F&source=iu&pf=m&fir=RLg3q1VbwF3nFM%253A%252CyJ-ijRVIRdQ7jM%252C_&usg=__xiBm5dnHT3irh7szJ8jPWCzlf0c%3D&biw=1400&bih=944&ved=0ahUKEwjppf-q8djVAhVIMo8KHUKdB0UQyjcIMA&ei=ZLmSWenjJsjkvATCup6oBA#imgrc=-QaB81GSeAhQbM:);
+				line-height:1em;
+				background-color:rgb(224,232,234);
+				font-size:16px;
+			/*	margin:10px;
+				margin-left:10px;
+				margin-righta;10px;
+				margin-top:10;
+				margin-bottom:10px; */
+				
+			}

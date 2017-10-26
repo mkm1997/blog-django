@@ -1,0 +1,135 @@
+
+.padding-0{
+	padding-left:0px;
+	padding-right:0px;
+	
+}
+.up{
+	padding-top:0px;
+	height:48px;
+	width:auto;
+	background-color:orange;
+}
+
+.icon{
+	margin-top:10px;
+	margin-right:8px;
+}
+.menu
+{
+	font-size:20px;
+	font-weight:bold;
+	/*padding:10px;*/
+	text-align:right;
+	margin-top:10px;
+	
+}
+.main
+{
+	height:4600px;
+	border:none;
+	padding:none;
+
+}
+.menu /*.navbar-default*/
+{
+	background:none;
+	border:none;
+}
+.menu .navbar-nav .active a ,.menu .navbar-nav .active a:hover {				/*for the color of the hower*/ 
+	background-color:orange;
+	color:white;
+	}
+.menu .navbar-nav li a:hover{ 
+	background-color:orange;    		/* for the color  of moving mouse on the curser*/
+	color:white;
+}
+
+.side{
+	
+	height:5022px;
+	background-color:orange;
+	color:red;
+
+	}
+.search
+{
+
+    padding-top:13px;
+    padding-left:20px;
+
+
+
+}
+input[type=text],input[type=password] {    width: 130px;
+
+    outline-width:0px;
+
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 16px;
+    border-color:white;
+    font-size: 16px;
+    background-color: white;
+    background-image:url();
+    border:none;
+    background-position:10px 10px;
+    background-repeat: no-repeat;
+    /*padding: 12px 20px 12px 40px;*/
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+
+input[type=text]:focus {
+
+    outline-width:0px;
+    width: 85%;
+}
+.social [class*="fa fa-"] {
+    background-color: #333;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: auto 3px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.fa-twitter:hover {
+    background-color: #46c0fb;
+}
+.fa-linkedin:hover {
+    background-color: #0077B5;
+}
+.fa-google:hover {
+    background-color: #d34836;
+}
+.fa-instagram:hover {
+    background-color: #fb3958;
+}
+.fa-facebook:hover {
+    background-color: #3b5998;
+}
+.text .content{
+        margin:20px;
+        font-size:25px;
+        font-family: 'Aldrich', sans-serif;
+}
+.heading{
+font-size:50px;
+}
+.text .heading {
+
+    font-family:sofia;
+}
+div.stack{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    margin:20px;
+}

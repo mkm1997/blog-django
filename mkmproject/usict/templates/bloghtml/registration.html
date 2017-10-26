@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport"content="width-device-width">
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+		<link rel="stylesheet" href="{% static 'signup.css' %}"><!-- link css file with the name projectstyle.cc-->
+
+	</head>
+<body >
+    <!-- signup form is hare-->
+    {% block body_block %}
+
+    <div >
+    {% if registered %}
+     <h1>Thank you</h1>
+     {% else %}
+
+     <div class="container" >
+     <div class="row">
+     <div class="col-sm-3">
+     </div>
+
+    <div class = "col-sm-6">
+     <form method="POST">
+         <div class="row" style="margine:20px">
+         <strong><i class="pull-right">If Registered </i></strong><br>
+         <input  class= "MyButton pull-right" type="button" value="Login" onclick="window.location.href='/usict/user_login/'">
+         </div>
+
+
+      {% csrf_token %}
+         <label for="username">Username:</label><br>
+         {{user_form.username}}
+         <br><label for="email">Email:</label><br>
+         {{user_form.email}}
+     <br> <label for="password">Password:</label><br>
+         {{user_form.password}}
+     <!--{{ user_form.as_p }}<br-->
+
+       <div class="clearfix" align="center">
+
+       <button type="submit" class="signupbtn">Sign Up</button>
+       </div>
+     </form>
+    </div>
+         <div class="col-sm-3">
+         </div>
+
+     </div>
+    </div>
+
+    {% endif %}
+
+</div>
+
+{% endblock %}
+
+</body>
+</html>

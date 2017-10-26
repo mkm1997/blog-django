@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+
+
+
+<html lang="eng-us">
+	<head>
+
+
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width-device-width">
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+		<link href="https://fonts.googleapis.com/css?family=Aldrich|Passion+One" rel="stylesheet">
+		<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> <!-- link the bootstrap css file-->
+		<link rel="stylesheet" href="{% static 'blogcss.css' %}"><!-- link css file with the name projectstyle.cc-->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	</head>
+	<body><!-- header class-->
+	
+		<div class="container-fluid" >
+			<div class="row">
+		<div class="col-sm-2 side padding-0">
+
+
+
+
+
+
+		<!--empty div -->
+		</div>
+		<div class="col-sm-8 padding-0" style="height:5000px">
+
+			<div class="container-fluid up"><!--hader of infhttps://www.facebook.com" class="icon" title="facebook" target="_blank"><i class="fa fa-facebook"  aria-hidden="true" style="font-size:20px;color:#fff"></i></a>
+					<a href="https://www.instagram.como-->
+			<div class="row">
+			<div class="col-sm-3 icon" >
+				<a href="https://www.facebook.com" class="icon" title="instagram" target="_blank"><i class="fa fa-facebook" aria-hidden="true" style="font-size:20px;color:white"></i></a>
+
+
+					<a href="https://www.instagram.com" class="icon" title="instagram" target="_blank"><i class="fa fa-instagram" aria-hidden="true" style="font-size:20px;color:white"></i></a>
+					<a href=" https://www.twitter.com" class="icon" title="twitter" target="_blank"><i class="fa fa-twitter" aria-hidden="true" style="font-size:20px;color:white"></i></a>
+					<a href="https://www.googleplus.com" class="icon" title="google plus" target="_blank"><i class="fa fa-google"  aria-hidden="true" style="font-size:20px;color:white"></i></a>
+					<a href="https://www.youtube.com" class="icon" title="youtube" target="_blank"><i class="fa fa-youtube" aria-hidden="true" style="font-size:20px;color:white"></i></a>
+			</div>
+				<div class="col-sm-1 pull-right">
+				<div class="dropdown pull-right"><!-- dropdown menue-->
+					<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="background-color:orange;border:none;padding:10px">
+					<strong style="font-size:20px">More</strong>
+					<span class="caret"></span></button>
+					<ul class="dropdown-menu">
+					<li><a href="{%url 'blog'%}">Home</a></li>
+					<li><a href="usict/feedback/">Feedback</a></li>
+					<li><a href="#">NewsFeed</a></li>
+					</ul>
+					</div><!--dropdown menue end hare-->
+				</div><!-- col ends hare -->
+
+				<div class="col-sm-4 pull-right search" >
+					<form method="POST">
+						<span class="fa fa-search pull-right" style=" padding-top:5px"></span>
+						<input  class= "pull-right" type="text" value="       search">
+					<!--button class="btn btn-default ser" type="button" value="submit" >Search</button-->
+					</form>
+				</div>
+
+
+			</div>
+			</div>
+
+			<nav class="navbar navbar-default menu">
+					<div class="navbar-header"><!-- for collapsable icon-->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#synavbar" style="color:red">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button><!--end of buttons-->
+					</div> <!--end of navbar header-->
+					<div class="collapse navbar-collapse" id="synavbar">
+					<ul class="nav navbar-nav pull-right">
+					<li class="active"><a href="{% url 'blog' %}">Home</a></li>
+					<li><a href="{% url 'about'%}">About us</a></li>
+						<li><a href="{% url 'blog_view'%}">Blog</a></li>
+
+
+						{% if user.is_authenticated %}
+					<li><a href="{% url 'logout'%}">Logout</a></li>
+
+						{% else %}
+						<li><a href="{% url 'register'%}">Login/Signup</a></li>
+						{% endif %}
+
+				</ul>
+
+				</div>
+			</nav>
+
+
+			<div class ="text" style="margin-top:20px">
+				<h2 class="heading"><strong><i style="color:orange;margin:10px">The M.K.M's Blog</i></strong></h2>
+			<img class="img-responsive" src="https://i.ytimg.com/vi/eBV14-3LT-g/maxresdefault.jpg" style="margine-up=10px">
+				<h2 class = "heading" style="color:orange;margin-top:20px"><strong><i>Coding Is Creativity</i></strong></h2>
+
+
+ <p class="content"> “Everyone should learn and Apply code?” We are hearing and reading this sentence time and again over the past few years. Many people associate coding with the analytical and logical thinking and it’s true. But it also helps the children to become creative thinkers.
+
+It is quite evident from the scratch app which helps kids to learn coding through stories, games and animations, which in turn makes them to think creatively.
+
+In today’s generation, it is important to develop the ability to think creatively. How can we develop young minds as creative thinkers? Provide suitable opportunities to improve their skills.
+
+Almost every child knows how to operate a phone or how to chat with friends. But only a few have little experience on how to create them.
+
+				</p><br>
+
+
+				<img src="http://www.codingzen.in/wp-content/uploads/2016/08/Background-Kids-Coding-01-Flynn-1600-x-800-600x300.jpg" align="center" style="margin:10px">
+
+
+				<div class="social pull-right stack" >
+  				<a class="fa fa-facebook" title="" target="_blank" href="https://www.facebook.com" style="background-color: #3b5998;"></a><br>
+  				<br><a class="fa fa-twitter" title="" target="_blank" href="https://www.twitter.com" style="background-color:#46c0fb"></a><br>
+					<br><a class="fa fa-linkedin" title="" target="_blank" href="https://www.linkedin.com" style="background-color:#0077B5"></a><br>
+					<br><a class="fa fa-google" title="" target="_blank" href="https://www.google.com" style="background-color:#d34836"></a><br>
+					<br><a class="fa fa-instagram" title="" target="_blank" href ="https://www.google.com" style="background-color:#fb3958"></a><br>
+		</div>
+
+
+				<h2 class = "heading" style="color:orange;margin:10px"><strong><i>Is programming a creative pursuit?.</i></strong></h2>
+
+				<p class="content">It’s becoming clear that we, as a society, are placing a larger and larger emphasis on innovation and creativity while at the same time bemoaning the lack thereof. There are some activities that we instantly recognize as creative pursuits: painting, music, writing, theatre. And also more modern ones: graphics, web design, info graphics and industrial design, font design and lettering. But when it comes to modern acitivities and professions one of the elephants in the room is programming. The question that’s been on my mind: is programming a creative pursuit?</p>
+				<p class="content">Programming is problem-solving. It’s about coming up with ways to do things that couldn’t be done before (or at least doing them better). But that’s just the beginning. Once you figure out a way to solve the problem you then create something – a program – that embodies your solution. The program is what goes ahead and solves the problem, hopefully correctly and repeatedly. A program that only works once isn’t very useful. If you’re not creating anything, then you’re not a programmer.</p>
+				<p class="content">That being said, I think there are some significant differences with typical creative work that needs to be made clear. For one thing, there’s lot less waiting around for inspiration to hit. There isn’t anything really analogous to writer’s block – once you have a problem to chew on you can get going. That’s not to say that you can’t get stuck or that it’s smooth sailing. Far from it, your typical programmer is pretty experienced in applying head to desk. When you don’t have a definite problem to solve it’s a different matter. Luckily there’s lots of interesting software that needs building and problems that need solving. To get out of the rut you just need to do a little Googling (or keep a little stash of side projects to hack on).</p>
+				<img style="margin:10px;height:400px;width:600px"  src="http://content.presspage.com/uploads/722/800_codingpicture.jpg?10000">
+				<p class="content">Perhaps one criticism of programming as a creative endeavor is that the products aren’t instantly identifiable as creative works. Perhaps if you spent a lot of time crafting GUIs you can make some comparison to the visual arts. If you’re writing server software or building programming languages the end results are far more abstract and invisible. But I’d make the argument that a programmer produces a work of art in the same way that a novelist or a poet does. Understanding that art requires the use of some more mental faculties — understanding symbols, structures, mathematics, semantics and their inter-relation. The process is perhaps harder than looking at a painting. But the payoff to the observer is no less than listening to, and appreciating a piece of music.</p>
+
+
+				<p class="content">All that being said, one of the coolest things about programming is that you can use your programs to produce obvious art work, or write programs that will create art for you. As I’ve been exploring programming and computer science I’ve been thinking of programming as a medium for expression in the same way that music or art is a medium for expression. But more on that later.</p>
+				<img style="margin:10px;height:400px;width:600px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgFiFRl-ZhjBEBPmcAJeaoZ5YPfbLLrsC1GLtVvaYMr1i_ajRh">
+				<p class="content">Programming has some of the other hallmarks of other creative pursuits. You need lots of practice to get any good. When it’s time to actually create you need to isolate and separate yourself from the rest of the world or you just keep getting distracted. I think there’s an image of programming being dry and interesting only if you’re already into it while the classic creative arts are supposedly fun and energizing. I would argue that’s an unfortunate by-product of our social evolution. If you consider a creative person (or want to become one) I would say give programming a try. There are lots of ways to get started. Though the learning curve is certainly steep (and probably steeper than it needs to be) it’s probably not that much harder than learning to draw or play the violin.</p>
+			</div>
+
+
+		<div class="jumbotron" style="background-color:orange">
+			<div class = "container-fluid">
+				<div class ="row">
+
+				<div class = "col-sm-4">
+					<ul>
+						<a href="{%url 'blog' %}"><li>HOME</li></a>
+						<a href="{%url 'blog_view' %}"><li>BLOG</li></a>
+						<a href="{%url 'register' %}"><li>Login/signup</li></a>
+							<a href="{% url 'about' %}"><li>about us</li></a>
+					</ul>
+
+			</div>
+			<div class="col-sm-4">
+				<div class="social">
+  				<a class="fa fa-facebook" title="" target="_blank" href="https://www.facebook.com"></a>
+  				<a class="fa fa-twitter" title="" target="_blank" href="https://www.twitter.com"></a>
+					<a class="fa fa-linkedin" title="" target="_blank" href="https://www.linkedin.com"></a>
+					<a class="fa fa-google" title="" target="_blank" href="https://www.google.com"></a>
+					<a class="fa fa-instagram" title="" target="_blank" href="https://www.instagram.com"></a>
+		</div>
+
+			</div>
+			<div class="col-sm-4" style="color:white">
+				<Strong>Contact Us:</Strong>
+				<p class="content">Manish Kumar Mishra</p>
+				<span class="glyphicon glyphicon-envelope"><i >manishmishra039@gmail.com,</i> </span>
+				<span class="glyphicon glyphicon-earphone"><i> <small>+</small>91-8745873385</i> </span>
+
+
+
+			</div>
+
+
+		</div>
+		</div>
+		</div>
+
+		</div><!-- div of col 8 end hare-->
+		<div class="col-sm-2 side padding-0">
+
+		</div>
+		</div>
+		</div>
+	{% block body_block %}
+
+
+	{% endblock %}
+		
+		<script type="text/javascript" src="{% static 'js/jquery-3.2.1.js' %}"></script> <!-- include the jquery file and link it to the body-->
+		<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+		<!--header-->
+	</body>
+</html>

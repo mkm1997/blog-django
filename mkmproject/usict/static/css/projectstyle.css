@@ -1,0 +1,79 @@
+.top_bar{
+			
+			background-color:rgb(12,224,50);
+			padding-top:10px;
+			padding-bottom:10px;
+			/*font-size:32px;*/
+			/*padding:32px;*/
+			/*color:white;*/
+		position:fixed;
+}
+.icon{
+	  margin-right:10px;
+	
+	}
+	.mkm{
+		position:fixed;
+	}
+.contact{
+	margin-right:3px;
+	font-size:20px;
+	text-align:right;
+	color:white;}
+.menu
+{
+	font-size:20px;
+	font-weight:bold;
+	/*padding:10px;*/
+	text-align:right;
+	margin-top:10px;
+}
+.menu .navbar-default
+{
+	background:none;
+	border:none;
+}
+.menu .navbar-nav .active a ,.menu .navbar-nav .active a:hover {				/*for the color of the hower*/ 
+	background-color:rgb(12,224,50);
+	color:white;
+	}
+.menu .navbar-nav li a:hover{ 
+	background-color:rgb(12,224,50);    		/* for the color  of moving mouse on the curser*/
+	color:white;
+}	
+.img{
+	/*border:10px;
+	size:64px;
+	padding:10px;*/
+	margin-top:10px;
+}
+.more{
+	margin-top:5px;
+	/*border-color:(0,0,0);*/
+	
+}
+.img_pad{
+	margin-top:5px;
+	
+}
+.text{
+	font-family:georgian;
+	font-weight:bold;
+	font-size:32px;
+	color;rgb(100,100,100);
+}
+.mid{
+		position:fixed;
+		margin:10px;
+		
+	}
+.foot{
+	size:200%;
+	background-color:rgb(50,100,254);
+	color:white;
+	
+	}
+.img_footer img{
+	size:16px;
+	border-radius:100%;
+}

@@ -25,11 +25,14 @@ STATIC_DIR = os.path.join(BASE_DIR,'static')
 SECRET_KEY = '#kv5#!xov5g0qs3%2#-r8il!nmu#_k_np!jwn&8eiayt__5^40'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 
 ALLOWED_HOSTS = []
 
-
+if 'runserver' in sys.argv:
+    DEBUG = True
+else:
+    DEBUG = False
 # Application definition
 
 INSTALLED_APPS = [

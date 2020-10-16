@@ -1,11 +1,7 @@
 
 from django.http import HttpResponseRedirect,HttpResponse
 from  django.shortcuts import render
-#form .models import post,comment
-#from djang.views.generic import (TemplateView,ListView,DetailView,CreatView,UpdateView,DeleteView)
 from usict.forms import sign_up,post,comment_blog
-#from django contrib.auth.mixins import LoginRequiredMixins
-# for login view we are going to import
 from django.contrib.auth import authenticate,login,logout
 from django.core.urlresolvers import reverse
 from django.contrib.auth.decorators import login_required
@@ -114,42 +110,7 @@ def user_login(request):
 
 
 
-# for post and comments code is hare
-'''
-class AboutView(TemplateView):
-    template_name = 'about.html'
 
-class PostListview(ListView):
-    model = post
-    
-    def get_queryset(self):
-        return post.objects.filter.(published_date__lte=timezone.now.order_by('-published_date'))  #lte for less then equal to
-
-class PostDetailView(DetailView):
-    model = post
-
-class CreatePostView(LoginRequiredMixin,DetailView):
-    
-    login_url='/user_login/'
-    redirect_field_name = 'usict/post_detail.html'
-    form_class = PostForm
-    model = post
-    
-    
-class PostUpdateView(LoginRequiredMixin,UpdateView):  
-    
-    login_url='/user_login/'
-    redirect_field_name = 'usict/post_detail.html'
-    form_class = PostForm
-    
-    model = post
-class PostDeleteView(LoginRequiredMixins.Deleteview):
-    model = post
-    success_url = reverse_lazy('post_list')
-     
-
-
-'''
 
 
 
